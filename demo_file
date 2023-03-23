@@ -1,10 +1,4 @@
-# here is a commented line
-# push
-#push
-            #  pall
-push 1
-push 2
-push 10
-push 3
-mod
-pall
+push 127
+pchar
+push 253
+pchar

@@ -91,5 +91,6 @@ void div_top_elements(stack_t **stack, unsigned int line_number);
 void mul_top_elements(stack_t **stack, unsigned int line_number);
 void mod_top_elements(stack_t **stack, unsigned int line_number);
 void swap_top_elements(stack_t **stack, unsigned int line_number);
+void pchar_top_elements(stack_t **stack, unsigned int line_number);
 
 #endif
