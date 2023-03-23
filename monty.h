@@ -6,7 +6,7 @@
 /*--------------------------------------------*/
 
 extern int arg_count;
-extern char command[10];
+extern char command[];
 extern int command_operand;
 
 
@@ -79,6 +79,7 @@ int set_args(char *line_content);
 
 void free_stack(void);
 void push_to_stack(stack_t **stack, unsigned int line_number);
+void pop_from_stack(stack_t **stack, unsigned int line_number);
 void print_stack_top(stack_t **stack, unsigned int line_number);
 void print_from_stack(stack_t **stack, unsigned int line_number);
 

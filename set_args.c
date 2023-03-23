@@ -19,7 +19,12 @@ int set_args(char *line_content)
 	int w_space;
 	char temp[10];
 
+
 	i = j = w_space = arg_count = 0;
+
+	for (; command[i]; i++)
+		command[i] = '\0';
+	i = 0;
 
 	while (line_content[i] != '\0' && line_content[i] != '\n')
 	{
