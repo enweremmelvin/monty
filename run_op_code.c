@@ -20,6 +20,7 @@ int run_op_code(int line_number)
 		{"pop", pop_from_stack},
 		{"swap", swap_top_elements},
 		{"add", add_top_elements},
+		{"nop", do_nothing},
 		{NULL, NULL}
 	};
 
