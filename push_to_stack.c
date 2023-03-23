@@ -17,6 +17,7 @@ void push_to_stack(stack_t **stack, unsigned int line_number)
 	{
 		dprintf(STDERR_FILENO, "L%d: usage: push integer\n",
 			line_number);
+		free_stack();
 		exit(EXIT_FAILURE);
 	}
 
@@ -24,6 +25,7 @@ void push_to_stack(stack_t **stack, unsigned int line_number)
 	if (stack_add == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: malloc failed\n");
+		free_stack();
 		exit(EXIT_FAILURE);
 	}
 	stack_add->n = command_operand;

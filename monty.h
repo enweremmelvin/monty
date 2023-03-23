@@ -77,6 +77,7 @@ int parse_file(char *file_name);
 int run_op_code(int line_number);
 int set_args(char *line_content);
 
+void free_stack(void);
 void push_to_stack(stack_t **stack, unsigned int line_number);
 void print_from_stack(stack_t **stack, unsigned int line_number);
 

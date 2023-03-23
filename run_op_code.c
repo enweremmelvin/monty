@@ -36,6 +36,7 @@ int run_op_code(int line_number)
 	{
 		dprintf(STDERR_FILENO, "L%d: unknown instruction %s\n",
 			line_number, command);
+		free_stack();
 		exit(EXIT_FAILURE);
 	}
 

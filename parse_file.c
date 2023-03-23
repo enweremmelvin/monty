@@ -22,6 +22,7 @@ int parse_file(char *file_name)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't open file %s\n",
 			file_name);
+		free_stack();
 		exit(EXIT_FAILURE);
 	}
 
