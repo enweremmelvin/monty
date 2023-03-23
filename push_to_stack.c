@@ -15,8 +15,8 @@ void push_to_stack(stack_t **stack, unsigned int line_number)
 
 	if (arg_count != 2)
 	{
-		dprintf(STDERR_FILENO, "L%d: usage: push"
-			" integer\n", line_number);
+		dprintf(STDERR_FILENO, "L%d: usage: push integer\n",
+			line_number);
 		exit(EXIT_FAILURE);
 	}
 
