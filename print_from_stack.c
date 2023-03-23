@@ -10,16 +10,16 @@
 
 void print_from_stack(stack_t **stack, unsigned int line_number)
 {
-	stack_t *test;
+	stack_t *temp_;
 
 	(void) stack;
 	(void) line_number;
 
-	test = temp;
+	temp_ = temp;
 
-	while (test != NULL)
+	while (temp_ != NULL)
 	{
-		printf("%d\n", test->n);
-		test = test->prev;
+		printf("%d\n", temp_->n);
+		temp_ = temp_->prev;
 	}
 }
