@@ -17,6 +17,7 @@ int run_op_code(int line_number)
 		{"push", push_to_stack},
 		{"pall", print_from_stack},
 		{"pint", print_stack_top},
+		{"popl", pop_from_stack},
 		{NULL, NULL}
 	};
 
