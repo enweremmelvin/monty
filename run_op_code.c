@@ -19,6 +19,7 @@ int run_op_code(int line_number)
 		{"pint", print_stack_top},
 		{"pop", pop_from_stack},
 		{"swap", swap_top_elements},
+		{"add", add_top_elements},
 		{NULL, NULL}
 	};
 
