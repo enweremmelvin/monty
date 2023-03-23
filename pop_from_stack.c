@@ -15,17 +15,11 @@ void pop_from_stack(stack_t **stack, unsigned int line_number)
 
 	if (temp != NULL)
 	{
-		if (temp->prev != NULL)
-		{
-			temp_ = temp->prev;
+		temp_ = temp->prev;
+		if (temp_ != NULL)
 			temp_->next = NULL;
-			free(temp);
-			temp = temp_;
-		}
-		else
-		{
-			free(temp);
-		}
+		free(temp);
+		temp = temp_;
 	}
 	else
 	{
