@@ -16,6 +16,14 @@ void div_top_elements(stack_t **stack, unsigned int line_number)
 
 	if (temp != NULL && temp->prev != NULL)
 	{
+		if (temp->n == 0)
+		{
+			dprintf(STDERR_FILENO, "L%d: division by zero\n",
+				line_number);
+			free_stack();
+			exit(EXIT_FAILURE);
+		}
+
 		temp->prev->n /= temp->n;
 		temp->prev->next = NULL;
 		temp_ = temp->prev;
