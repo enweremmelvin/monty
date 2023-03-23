@@ -1,0 +1,11 @@
+#include "monty.h"
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+
+void print_stack_top(stack_t **stack, )

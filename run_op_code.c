@@ -16,6 +16,7 @@ int run_op_code(int line_number)
 	instruction_t opcode_list[] = {
 		{"push", push_to_stack},
 		{"pall", print_from_stack},
+		{"pint", print_stack_top},
 		{NULL, NULL}
 	};
 
