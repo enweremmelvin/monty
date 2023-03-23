@@ -13,6 +13,9 @@ void pstr_top_elements(stack_t **stack, unsigned int line_number)
 	(void) stack;
 	(void) line_number;
 
+	if (temp == NULL)
+		printf("\n");
+
 	while (temp != NULL)
 	{
 		if ((temp->n >= 0) && (temp->n <= 127))
