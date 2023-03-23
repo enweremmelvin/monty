@@ -86,6 +86,7 @@ void print_stack_top(stack_t **stack, unsigned int line_number);
 void print_from_stack(stack_t **stack, unsigned int line_number);
 void add_top_elements(stack_t **stack, unsigned int line_number);
 void sub_top_elements(stack_t **stack, unsigned int line_number);
+void div_top_elements(stack_t **stack, unsigned int line_number);
 void swap_top_elements(stack_t **stack, unsigned int line_number);
 
 #endif
