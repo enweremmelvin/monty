@@ -35,6 +35,8 @@ int parse_file(char *file_name)
 			break;
 
 		strcpy(line_content, trim(line_content));
+		if (check_comment(line_content) == 0)
+			continue;
 		set_args(line_content);
 		run_op_code(line_num);
 	}

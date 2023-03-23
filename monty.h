@@ -76,6 +76,7 @@ char *trim(char *text);
 int parse_file(char *file_name);
 int run_op_code(int line_number);
 int set_args(char *line_content);
+int check_comment(char *line_content);
 
 void free_stack(void);
 
