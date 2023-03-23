@@ -14,7 +14,7 @@ void pchar_top_elements(stack_t **stack, unsigned int line_number)
 
 	if (temp != NULL)
 	{
-		if ((temp->n >= 0) && (temp->n <= 255))
+		if ((temp->n >= 0) && (temp->n <= 127))
 			printf("%c\n", temp->n);
 		else
 		{
