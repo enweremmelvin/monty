@@ -25,6 +25,7 @@ int run_op_code(int line_number)
 		{"mod", mod_top_elements},
 		{"pall", print_from_stack},
 		{"swap", swap_top_elements},
+		{"pstr", pstr_top_elements},
 		{"pchar", pchar_top_elements},
 		{NULL, NULL}
 	};
