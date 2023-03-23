@@ -82,5 +82,6 @@ void push_to_stack(stack_t **stack, unsigned int line_number);
 void pop_from_stack(stack_t **stack, unsigned int line_number);
 void print_stack_top(stack_t **stack, unsigned int line_number);
 void print_from_stack(stack_t **stack, unsigned int line_number);
+void swap_top_elements(stack_t **stack, unsigned int line_number);
 
 #endif
