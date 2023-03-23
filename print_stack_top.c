@@ -9,6 +9,8 @@
 
 void print_stack_top(stack_t **stack, unsigned int line_number)
 {
+	(void) stack;
+
 	if (temp != NULL)
 		printf("%d\n", temp->n);
 	if (temp == NULL)
