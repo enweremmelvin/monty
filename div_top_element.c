@@ -32,7 +32,7 @@ void div_top_elements(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		dprintf(STDERR_FILENO, "L%d: can't sub, stack too short\n",
+		dprintf(STDERR_FILENO, "L%d: can't div, stack too short\n",
 			line_number);
 		free_stack();
 		exit(EXIT_FAILURE);
