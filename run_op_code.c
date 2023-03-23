@@ -22,6 +22,7 @@ int run_op_code(int line_number)
 		{"sub", sub_top_elements},
 		{"div", div_top_elements},
 		{"mul", mul_top_elements},
+		{"mod", mod_top_elements},
 		{"pall", print_from_stack},
 		{"swap", swap_top_elements},
 		{NULL, NULL}
