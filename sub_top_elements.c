@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
- * add_top_elements - add the top 2 elements of the stack
+ * sub_top_elements - sub the top element from the second top element
  *                    and delete the top element
  *
  * @stack: memory address of the stack
  * @line_number: number of line being read from file
  */
 
-void add_top_elements(stack_t **stack, unsigned int line_number)
+void sub_top_elements(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp_;
 
@@ -16,7 +16,7 @@ void add_top_elements(stack_t **stack, unsigned int line_number)
 
 	if (temp != NULL && temp->prev != NULL)
 	{
-		temp->prev->n += temp->n;
+		temp->prev->n -= temp->n;
 		temp->prev->next = NULL;
 		temp_ = temp->prev;
 		free(temp);
@@ -24,7 +24,7 @@ void add_top_elements(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		dprintf(STDERR_FILENO, "L%d: can't add, stack too short\n",
+		dprintf(STDERR_FILENO, "L%d: can't sub, stack too short\n",
 			line_number);
 		free_stack();
 		exit(EXIT_FAILURE);

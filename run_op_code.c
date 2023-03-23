@@ -14,13 +14,14 @@ int run_op_code(int line_number)
 {
 	int i, check_run_success;
 	instruction_t opcode_list[] = {
-		{"push", push_to_stack},
-		{"pall", print_from_stack},
-		{"pint", print_stack_top},
-		{"pop", pop_from_stack},
-		{"swap", swap_top_elements},
-		{"add", add_top_elements},
 		{"nop", do_nothing},
+		{"push", push_to_stack},
+		{"pop", pop_from_stack},
+		{"pint", print_stack_top},
+		{"add", add_top_elements},
+		{"sub", sub_top_elements},
+		{"pall", print_from_stack},
+		{"swap", swap_top_elements},
 		{NULL, NULL}
 	};
 
