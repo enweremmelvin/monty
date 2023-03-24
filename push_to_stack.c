@@ -40,7 +40,8 @@ void push_to_stack(stack_t **stack, unsigned int line_number)
 	{
 		stack_add->next = NULL;
 		stack_add->prev = temp;
-		temp->next = stack_add;
+		if (temp && temp->next)
+			temp->next = stack_add;
 		temp = stack_add;
 	}
 }
