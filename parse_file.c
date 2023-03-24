@@ -38,7 +38,8 @@ int parse_file(char *file_name)
 		if (check_comment(line_content) == 0)
 			continue;
 		set_args(line_content);
-		run_op_code(line_num);
+		if (strlen(line_content) > 1)
+			run_op_code(line_num);
 	}
 
 	fclose(file_content);
