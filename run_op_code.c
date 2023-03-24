@@ -42,8 +42,10 @@ int run_op_code(int line_number)
 
 		i++;
 	}
+	for (i = 0; command[i]; i++)
+		command[i] = '\0';
 
-	if (check_run_success == 0)
+	if (check_run_success == 0 && command[0])
 	{
 		dprintf(STDERR_FILENO, "L%d: unknown instruction %s\n",
 			line_number, command);
