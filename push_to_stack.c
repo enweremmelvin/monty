@@ -1,4 +1,5 @@
 #include "monty.h"
+#include "push_to_stack_extern.h"
 
 /**
  * push_to_stack - push new value to stack
@@ -6,8 +7,6 @@
  * @stack: memory address of the stack
  * @line_number: number of line being read from file
  */
-
-stack_t *temp;
 
 void push_to_stack(stack_t **stack, unsigned int line_number)
 {

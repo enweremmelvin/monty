@@ -1,4 +1,5 @@
 #include "monty.h"
+#include "set_arg_extern.h"
 
 /**
  * set_args - break up the words in line_content
@@ -8,10 +9,6 @@
  *
  * Return: 0
  */
-
-int arg_count;
-char command[10];
-int command_operand;
 
 int set_args(char *line_content)
 {

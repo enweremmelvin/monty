@@ -1,4 +1,5 @@
 #include "monty.h"
+#include "run_op_code_extern.h"
 
 /**
  * run_op_code - run the given opcode
@@ -7,8 +8,6 @@
  *
  * Return: 0
  */
-
-stack_t *stack;
 
 int run_op_code(int line_number)
 {

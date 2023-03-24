@@ -63,8 +63,8 @@ typedef struct instruction_s
 /*DEFINED EXTERNAL VARIABLES (TYPE: STRUCTURE)*/
 /*--------------------------------------------*/
 
-extern stack_t *stack;
 extern stack_t *temp;
+extern stack_t *stack;
 
 
 

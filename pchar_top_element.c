@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * pchar_top_element - print the ascii character of
+ * pchar_top_elements - print the ascii character of
  *                     the top element in the stack
  *
  * @stack: memory address of the stack
