@@ -31,7 +31,7 @@ void push_to_stack(stack_t **stack, unsigned int line_number)
 		}
 		stack_add->n = command_operand;
 
-		if (*stack == NULL)
+		if (temp == NULL)
 		{
 			stack_add->next = NULL;
 			stack_add->prev = NULL;
